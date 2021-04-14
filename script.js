@@ -45,8 +45,8 @@ for (let i = 0; i < subjects.length; i++){
 
     subject.innerHTML += `
     <th>${subjects[i]}</th>
-    <td style = "background-color: ${students[1].grades[i] >= averageNum ? "rgb(26, 206, 35)" : "red"}">${students[1].grades[i]}</td>
     <td style = "background-color: ${students[0].grades[i] >= averageNum ? "rgb(26, 206, 35)" : "red"}">${students[0].grades[i]}</td>
+    <td style = "background-color: ${students[1].grades[i] >= averageNum ? "rgb(26, 206, 35)" : "red"}">${students[1].grades[i]}</td>
     <td style = "background-color: ${students[2].grades[i] >= averageNum ? "rgb(26, 206, 35)" : "red"}">${students[2].grades[i]}</td>
     <td style = "background-color: ${students[3].grades[i] >= averageNum ? "rgb(26, 206, 35)" : "red"}">${students[3].grades[i]}</td>
     <td>${averageNum}</td>
