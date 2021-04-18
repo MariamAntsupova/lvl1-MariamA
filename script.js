@@ -1,72 +1,77 @@
-let students = [
-    {
-        name:'Mariami' , 
-        grades:[85,60,50,35]
-    },
-    {
-        name:'Gela' , 
-        grades:[45,30,80,12]
-    },
-    {
-        name:'Shota' , 
-        grades:[100,56,80,42]
-    },
-    {
-        name:'Kukuri' , 
-        grades:[60,50,40,19]
-    },
+let students = [{
+    name: 'Mariami',
+    grades: [85, 60, 50, 35]
+},
+{
+    name: 'Gela',
+    grades: [45, 30, 80, 12]
+},
+{
+    name: 'Shota',
+    grades: [100, 56, 80, 42]
+},
+{
+    name: 'Kukuri',
+    grades: [60, 50, 40, 19]
+},
 
 ]
 
-let subjects = ['front-end' , 'java', 'flutter', 'python']
+let subjects = ['front-end', 'java', 'flutter', 'python']
 
 let subject = document.getElementById('tbody');
 let student = document.getElementById('students');
 
+addToHtml();
+
 function addStudent() {
-    let studentInput = document.querySelector('#student').value;
-    let frontGrade = document.querySelector('#front').value;
-    let javaGrade = document.querySelector('#java').value;
-    let flutterGrade = document.querySelector('#flutter').value;
-    let pythonGrade = document.querySelector('#python').value;
+let studentInput = document.querySelector('#student').value;
+let frontGrade = document.querySelector('#front').value;
+let javaGrade = document.querySelector('#java').value;
+let flutterGrade = document.querySelector('#flutter').value;
+let pythonGrade = document.querySelector('#python').value;
 
 
 
-    students.push({
-        name:studentInput,
-        grades:[frontGrade,javaGrade,flutterGrade,pythonGrade]
-    });
+students.push({
+    name: studentInput,
+    grades: [frontGrade, javaGrade, flutterGrade, pythonGrade]
+});
 
-    console.log(students , subjects);
+// console.log(students, subjects);
+addToHtml();
 }
+
 function average(listt) {
-    sum=0 ; 
-    for(var i=0 ; i<listt.length ; i++){
-      sum += listt[i];
-    }
-    let averageNum = sum / listt.length;
-  
-    return averageNum;
+sum = 0;
+for (var i = 0; i < listt.length; i++) {
+    sum += listt[i];
 }
-// let average = document.getElementById('students')
+let averageNum = sum / listt.length;
 
-for (let j = 0; j < students.length; j++){
+return averageNum;
+}
+
+function addToHtml() {
+student.innerHTML = `<th></th>`;
+subject.innerHTML = '';
+for (let j = 0; j < students.length; j++) {
     student.innerHTML += `<th>${students[j].name}</th>`
 }
-for (let i = 0; i < subjects.length; i++){
+for (let i = 0; i < subjects.length; i++) {
     let subjectAverageList = [];
     for (let j = 0; j < students.length; j++) {
-        subjectAverageList.push(students[j].grades[i]);
+        subjectAverageList.push(Number(students[j].grades[i]));
+        // console.log(subjectAverageList);
     }
-    let averageNum = average(subjectAverageList);
+    let tds = '';
+    for (let student of students) {
+        tds += ` <td style = "background-color: ${student.grades[i]>= average(subjectAverageList) ? `rgb(26, 206, 35)` : `red`} " > ${String(student.grades[i])} </td>\n`;
+    }
 
-    subject.innerHTML += `
-    <th>${subjects[i]}</th>
-    <td style = "background-color: ${students[0].grades[i] >= averageNum ? "rgb(26, 206, 35)" : "red"}">${students[0].grades[i]}</td>
-    <td style = "background-color: ${students[1].grades[i] >= averageNum ? "rgb(26, 206, 35)" : "red"}">${students[1].grades[i]}</td>
-    <td style = "background-color: ${students[2].grades[i] >= averageNum ? "rgb(26, 206, 35)" : "red"}">${students[2].grades[i]}</td>
-    <td style = "background-color: ${students[3].grades[i] >= averageNum ? "rgb(26, 206, 35)" : "red"}">${students[3].grades[i]}</td>
-    <td>${averageNum}</td>
-    `
+    let trs = `<tr> <td>${subjects[i]}</td> ` + tds + `<td>${average(subjectAverageList)}</td> </tr>`;
+    subject.innerHTML += trs;
+
 }
-student.innerHTML += `<th>Average</th>`
+student.innerHTML += `<th>Average</th>`;
+}
