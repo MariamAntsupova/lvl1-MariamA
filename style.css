@@ -1,0 +1,134 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(39, 37, 37);
+    color: white;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    width: 50%;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    flex: 1 1 150;
+    padding: 0 20px 0 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    width: 50%;
+    min-height: 80vh;
+    flex-wrap: wrap;
+    flex: 1 1 150;
+}
+
+h1 {
+    color: white;
+    text-shadow: 0 0 5px white, 0 0 25px #1b7a81, 0 0 50px #04ebfc;
+}
+
+.input-class {
+    flex-basis: 90%;
+    height: 5vh;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.534);
+    color: blanchedalmond;
+    text-align: center;
+}
+
+.search-button {
+    height: 5.2vh;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.534);
+    color: blanchedalmond;
+}
+
+.search-button:hover {
+    height: 5.3vh;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #050505, 0 0 25px #1b7a81, 0 0 50px #04ebfc;
+}
+
+.input-class:hover {
+    border-radius: 5px;
+    box-shadow: 0 0 5px #050505, 0 0 25px #1b7a81, 0 0 50px #04ebfc;
+}
+
+.vl {
+    border-left: 2px solid white;
+    box-shadow: 0 0 5px #050505, 0 0 25px #1b7a81, 0 0 50px #04ebfc;
+    height: 100vh;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    width: 50%;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    flex: 1 1 150;
+    padding: 0 20px 0 20px;
+}
+
+.result h2 {
+    margin: 5%;
+}
+
+.result-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100vh;
+    width: 60%;
+    overflow-y: scroll;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 4px;
+    height: 60vh;
+    width: 20vw;
+    margin: 2%;
+}
+
+.video {
+    width: 100%;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 0 5px #050505, 0 0 25px #1b7a81, 0 0 50px #04ebfc;
+    transition: 0.3s;
+    border-radius: 4px;
+    height: 65vh;
+    width: 25vw;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    box-shadow: 0 0 5px #050505, 0 0 25px #1b7a81, 0 0 50px #04ebfc;
+}
