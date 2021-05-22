@@ -2,6 +2,7 @@
     padding: 0%;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 .parallax {
@@ -30,4 +31,23 @@
     width: 25px;
     border-radius: 50%;
     display: inline-block;
+}
+
+.fal,
+.far {
+    width: 40px;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+
+.cardimg:hover {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all 1s ease;
+}
+
+.hover:hover {
+    color: #FF523B;
 }

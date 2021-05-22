@@ -19,7 +19,7 @@
 
 <body>
     <header>
-        <div class="top-nav d-flex bg-light justify-content-between px-4 align-items-center text-center">
+        <div class="top-nav d-flex bg-light justify-content-between px-4 align-items-center text-center flex-fill">
             <div class="top-left d-flex p-2 flex-fill">
                 <p class="text-secondary">Welcome to Our store Multikart</p>
                 <div class="call d-flex ml-5 ">
@@ -28,10 +28,10 @@
             </div>
             <div class="top-right d-flex justify-content-end p-2 flex-fill ">
                 <div class="my-account d-flex">
-                    <p class="text-secondary">
-                        <i class="fas fa-heart text-secondary  mr-5 "></i>
+                    <p class="text-secondary  ">
+                        <i class="fas fa-heart text-secondary  mr-5  "></i>
 
-                        <i class="fas fa-user text-secondary"></i> My Account
+                        <i class="fas fa-user text-secondary  "></i> My Account
                     </p>
                 </div>
             </div>
@@ -135,19 +135,19 @@
         <div class="slider">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="./images/slider1.jpg" alt="First slide">
-                        <div class="carousel-caption text-center">
-                            <h2 class="text-dark text-lg-left font-weight-bold">Welcome To Fashion</h2>
-                            <h1 class="text-dark text-lg-left font-weight-bold">MEN FASHION</h1>
+                    <div class="carousel-item active ">
+                        <img class="d-block w-100 " src="./images/slider1.jpg" alt="First slide">
+                        <div class="carousel-caption text-center float-left ">
+                            <h2 class="text-dark text-left font-weight-bold ">Welcome To Fashion</h2>
+                            <h1 class="text-dark text-left font-weight-bold ">MEN FASHION</h1>
                             <button class="btn btn-danger float-left">SHOP NOW</button>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" src="./images/slider2.jpg" alt="Second slide">
-                        <div class="carousel-caption text-center">
-                            <h2 class="text-dark text-lg-left font-weight-bold">Welcome To Fashion</h2>
-                            <h1 class="text-dark text-lg-left font-weight-bold">WOMEN FASHION</h1>
+                        <div class="carousel-caption text-center float-left ">
+                            <h2 class="text-dark text-left font-weight-bold ">Welcome To Fashion</h2>
+                            <h1 class="text-dark text-left font-weight-bold">WOMEN FASHION</h1>
                             <button class="btn btn-danger float-left">SHOP NOW</button>
                         </div>
                     </div>
@@ -162,12 +162,14 @@
                 </a>
             </div>
         </div>
-        <div class="two-images d-flex justify-content-around mt-5 mb-5">
-            <div class="bg-image hover-zoom ">
-                <img src="./images/sub-banner1.jpg" class="w-100">
+
+        <div class="d-flex flex-row flex-wrap bd-highlight justify-content-around mt-5 mb-5 ">
+            <div class="bg-image ">
+                <img src="./images/sub-banner1.jpg" class="w-100 hover-zoom ">
+                <div class="mask flex-center rgba-green-slight"></div>
             </div>
             <div class="bg-image hover-zoom ">
-                <img src="./images/sub-banner2.jpg" class="w-100">
+                <img src="./images/sub-banner2.jpg" class="w-100 hover-zoom ">
             </div>
         </div>
         <div class="special-offer text-center ">
@@ -176,9 +178,11 @@
             <hr class="width-10">
             <p>Looking for the latest trends in clothing, shoes and accessories? Welcome to our 'Latest Drops' edit, <br>bringing you all the latest styles from all your fave brands.</p>
         </div>
-        <div class="cards d-flex justify-content-around">
+        <div class="cards flex-wrap d-flex justify-content-around">
             <div class="card  align-items-center text-center d-flex p-5 flex-fill" style="width: 18rem; border: none;">
-                <img class="card-img-top" src="./images/cards/1.jpg" alt="Card image cap">
+
+                <img src="./images/cards/1.jpg" class="card-img-top">
+
                 <div class="starred">
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -260,7 +264,7 @@
             <h2><b>EVERYDAY CASUAL</b></h2>
             <hr class="width-10">
             <div class="nav-bar">
-                <nav class="navbar navbar-expand-lg navbar-light">
+                <nav class="navbar navbar-expand-lg navbar-light ">
                     <ul class="navbar-nav ">
                         <li class="nav-item active">
                             <a class="nav-link text-danger" href="#">WORK CASUAL <span class="sr-only">(current)</span></a>
@@ -275,7 +279,7 @@
                 </nav>
             </div>
         </div>
-        <div class="cards d-flex justify-content-around">
+        <div class="cards flex-wrap d-flex justify-content-around">
             <div class="card  align-items-center text-center d-flex p-5 flex-fill" style="width: 18rem; border: none;">
                 <img class="card-img-top" src="./images/cards/1.jpg" alt="Card image cap">
                 <div class="starred">
@@ -333,6 +337,83 @@
                     <span class="dot bg-info"></span>
                 </div>
             </div>
+            <div class="card align-items-center text-center d-flex p-5 flex-fill" style="width: 18rem; border: none;">
+                <img class="card-img-top" src="./images/cards/4.jpg" alt="Card image cap">
+                <div class="starred">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Multi Color Polo Tshirt </p>
+                    <h5 class="card-title">65$</h5>
+                </div>
+                <div class="dots d-flex ">
+                    <span class="dot bg-primary"></span>
+                    <span class="dot bg-secondary"></span>
+                    <span class="dot bg-info"></span>
+                </div>
+            </div>
+            <div class="card  align-items-center text-center d-flex p-5 flex-fill" style="width: 18rem; border: none;">
+                <img class="card-img-top" src="./images/cards/1.jpg" alt="Card image cap">
+                <div class="starred">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Multi Color Polo Tshirt </p>
+                    <h5 class="card-title">65$</h5>
+                </div>
+                <div class="dots d-flex ">
+                    <span class="dot bg-primary"></span>
+                    <span class="dot bg-secondary"></span>
+                    <span class="dot bg-info"></span>
+                </div>
+            </div>
+            <div class="card align-items-center text-center d-flex p-5 flex-fill" style="width: 18rem; border: none;">
+                <img class="card-img-top" src="./images/cards/2.jpg" alt="Card image cap">
+                <div class="starred">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Multi Color Polo Tshirt </p>
+                    <h5 class="card-title">65$</h5>
+                </div>
+                <div class="dots d-flex ">
+                    <span class="dot bg-primary"></span>
+                    <span class="dot bg-secondary"></span>
+                    <span class="dot bg-info"></span>
+                </div>
+            </div>
+            <div class="card align-items-center text-center d-flex p-5 flex-fill" style="width: 18rem;border: none;">
+                <img class="card-img-top" src="./images/cards/3.jpg" alt="Card image cap">
+                <div class="starred">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Multi Color Polo Tshirt </p>
+                    <h5 class="card-title">65$</h5>
+                </div>
+                <div class="dots d-flex ">
+                    <span class="dot bg-primary"></span>
+                    <span class="dot bg-secondary"></span>
+                    <span class="dot bg-info"></span>
+                </div>
+            </div>
+
             <div class="card align-items-center text-center d-flex p-5 flex-fill" style="width: 18rem; border: none;">
                 <img class="card-img-top" src="./images/cards/4.jpg" alt="Card image cap">
                 <div class="starred">
@@ -353,85 +434,73 @@
                 </div>
             </div>
         </div>
-        <div class="cards d-flex justify-content-around">
-            <div class="card  align-items-center text-center d-flex p-5 flex-fill" style="width: 18rem; border: none;">
-                <img class="card-img-top" src="./images/cards/1.jpg" alt="Card image cap">
-                <div class="starred">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star unchecked"></span>
-                </div>
-                <div class="card-body">
-                    <p class="card-text">Multi Color Polo Tshirt </p>
-                    <h5 class="card-title">65$</h5>
-                </div>
-                <div class="dots d-flex ">
-                    <span class="dot bg-primary"></span>
-                    <span class="dot bg-secondary"></span>
-                    <span class="dot bg-info"></span>
+        <hr class="pb-3">
+
+        <div class="p-3 d-flex flex-wrap justify-content-around align-items-center">
+            <div class="border-right d-flex align-items-center  p-3">
+                <i class="fal fa-truck "></i>
+                <div>
+                    <h3 class="hover">Free Shipping</h3>
+                    <p> Free Shipping World Wide </p>
                 </div>
             </div>
-            <div class="card align-items-center text-center d-flex p-5 flex-fill" style="width: 18rem; border: none;">
-                <img class="card-img-top" src="./images/cards/2.jpg" alt="Card image cap">
-                <div class="starred">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star unchecked"></span>
-                </div>
-                <div class="card-body">
-                    <p class="card-text">Multi Color Polo Tshirt </p>
-                    <h5 class="card-title">65$</h5>
-                </div>
-                <div class="dots d-flex ">
-                    <span class="dot bg-primary"></span>
-                    <span class="dot bg-secondary"></span>
-                    <span class="dot bg-info"></span>
+            <div class="border-right d-flex align-items-center p-3">
+                <i class="fal fa-history"></i>
+                <div>
+                    <h3 class="hover">24 X 7 Service</h3>
+                    <p>Online Service For New Customer</p>
                 </div>
             </div>
-            <div class="card align-items-center text-center d-flex p-5 flex-fill" style="width: 18rem;border: none;">
-                <img class="card-img-top" src="./images/cards/3.jpg" alt="Card image cap">
-                <div class="starred">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star unchecked"></span>
-                </div>
-                <div class="card-body">
-                    <p class="card-text">Multi Color Polo Tshirt </p>
-                    <h5 class="card-title">65$</h5>
-                </div>
-                <div class="dots d-flex ">
-                    <span class="dot bg-primary"></span>
-                    <span class="dot bg-secondary"></span>
-                    <span class="dot bg-info"></span>
+            <div class=" d-flex align-items-center p-3">
+                <i class="far fa-volume-off"></i>
+                <div>
+                    <h3 class="hover">Festival Offer</h3>
+                    <p>New Online Special Festival Offer</p>
                 </div>
             </div>
-            <div class="card align-items-center text-center d-flex p-5 flex-fill" style="width: 18rem; border: none;">
-                <img class="card-img-top" src="./images/cards/4.jpg" alt="Card image cap">
-                <div class="starred">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star unchecked"></span>
-                </div>
+        </div>
+        <hr class="pt-3">
+        <div class="special-offer text-center ">
+            <h4 class="text-danger"><b>From The Blog</b></h4>
+            <h2><b>FASHION FOR YOU</b></h2>
+        </div>
+
+        <div class="cards flex-wrap d-flex justify-content-around ">
+            <div class="card  align-items-center text-center d-flex p-5 flex-fill" style="width: 20rem; border: none;">
+                <img class="card-img-top cardimg" src="./images/card2/1.jpg" alt="Card image cap">
                 <div class="card-body">
-                    <p class="card-text">Multi Color Polo Tshirt </p>
-                    <h5 class="card-title">65$</h5>
+                    <p class="text-danger">25 January 2018</p>
+                    <h4 class="card-title hover">London Fashion & Hair Trends From Fashion Week</h4>
+                    <h5 class="card-text text-secondary">By : John Dio . 2 Comment</h5>
                 </div>
-                <div class="dots d-flex ">
-                    <span class="dot bg-primary"></span>
-                    <span class="dot bg-secondary"></span>
-                    <span class="dot bg-info"></span>
+            </div>
+            <div class="card  align-items-center text-center d-flex p-5 flex-fill" style="width: 20rem; border: none;">
+                <img class="card-img-top cardimg" src="./images/card2/2.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="text-danger">25 January 2018</p>
+                    <h4 class="card-title hover">London Fashion & Hair Trends From Fashion Week</h4>
+                    <h5 class="card-text text-secondary">By : John Dio . 2 Comment</h5>
+                </div>
+            </div>
+            <div class="card  align-items-center text-center d-flex p-5 flex-fill" style="width: 20rem; border: none;">
+                <img class="card-img-top cardimg" src="./images/card2/3.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="text-danger">25 January 2018</p>
+                    <h4 class="card-title hover">London Fashion & Hair Trends From Fashion Week</h4>
+                    <h5 class="card-text text-secondary">By : John Dio . 2 Comment</h5>
+                </div>
+            </div>
+            <div class="card  align-items-center text-center d-flex p-5 flex-fill" style="width: 20rem; border: none;">
+                <img class="card-img-top cardimg" src="./images/card2/4.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="text-danger">25 January 2018</p>
+                    <h4 class="card-title hover">London Fashion & Hair Trends From Fashion Week</h4>
+                    <h5 class="card-text text-secondary">By : John Dio . 2 Comment</h5>
                 </div>
             </div>
         </div>
     </main>
+
     <footer class="bg-light container-fluid-2 p-5">
         <div class="d-flex">
             <div class="flex-fill border-right">
@@ -450,8 +519,8 @@
             </div>
         </div>
         <hr>
-        <div class="d-flex">
-            <div class="d-flex-column flex-fill">
+        <div class="d-flex flex-wrap">
+            <div class="d-flex-column flex-fill ">
                 <img src="./images/logo.png ">
                 <p class="mt-5">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut <br> enim ad minim veniam,
