@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./images/ll.PNG" type="image/x-icon">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -20,18 +20,18 @@
 <body>
     <header>
         <div class="top-nav d-flex bg-light justify-content-between px-4 align-items-center text-center flex-fill">
-            <div class="top-left d-flex p-2 flex-fill">
+            <div class="top-left d-flex p-2 flex-fill ">
                 <p class="text-secondary">Welcome to Our store Multikart</p>
-                <div class="call d-flex ml-5 ">
+                <div class="call d-flex ms-3 ">
                     <p class="text-secondary "> <i class="fa fa-phone text-danger  mr-2" aria-hidden="true"></i>Call Us:123-456-7890</p>
                 </div>
             </div>
             <div class="top-right d-flex justify-content-end p-2 flex-fill ">
                 <div class="my-account d-flex">
                     <p class="text-secondary  ">
-                        <i class="fas fa-heart text-secondary  mr-5  "></i>
+                        <i class="fas fa-heart text-secondary"></i>
 
-                        <i class="fas fa-user text-secondary  "></i> My Account
+                        <i class="fas fa-user text-secondary ms-5 "></i> My Account
                     </p>
                 </div>
             </div>
@@ -136,7 +136,7 @@
         </div>
     </header>
     <main class="p-5">
-        <div class="d-flex">
+        <div class="d-flex justify-content-between">
             <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
                 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                     <span class="fs-4">Sidebar</span>
@@ -225,6 +225,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                          PRICE
                         </a>
+
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <label for="customRange2" class="form-label">Example range</label>
                             <input type="range" class="form-range" min="0" max="5" id="customRange2">
@@ -233,16 +234,58 @@
                 </ul>
                 <hr>
             </div>
-            <div class="cards-menu bg-light">
-                <button onclick="request()" class="butval" value="5">data 5 </button>
-                <button onclick="request()" class="butval" value="10">data 10 </button>
-                <button onclick="request()" class="butval" value="15">data 15 </button>
+            <div class="cards-menu ms-5">
+                <div>
+                    <img src="./images/1.jpg" class="w-100" alt="photo">
+                </div>
+                <div class="mt-5">
+                    <h3 class="font-weight-bold flex-fill">
+                        BIGGEST DEALS ON TOP BRANDS
+                    </h3>
+                    <p class="text-secondary font-weight-bold">
+                        The trick to choosing the best wear for yourself is to keep in mind your body type, individual style, occasion and also the time of day or weather. In addition to eye-catching products from top brands, we also offer an easy 30-day return and exchange
+                        policy, free and fast shipping across all pin codes, cash or card on delivery option, deals and discounts, among other perks. So, sign up now and shop for westarn wear to your heart’s content on Multikart.
+                    </p>
+                </div>
+                <div class="d-flex flex-wrap border-top border-bottom flex-fill">
+                    <div class="border-right text-center p-3">
+                        <h4>Showing Products 1-24 Of 10 Result</h4>
+                    </div>
+                    <div class="border-right text-center p-3 d-flex flex-fill">
+                        <img src="./images/II" alt="">
+                        <img src="./images/III.png" class="ms-2" alt="">
+                        <img src="./images/IIII.png" class="ms-2" alt="">
+                        <img src="./images/IIIIII.png" class="ms-2" alt="">
+                    </div>
+                    <div class="border-right text-center p-3 flex-fill">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Choose Data
+                          </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#"><button onclick="request()" class="butval butt" value="5">data 5 </button></a>
+                            <a class="dropdown-item" href="#"><button onclick="request()" class="butval butt" value="10">data 10 </button></a>
+                            <a class="dropdown-item" href="#"> <button onclick="request()" class="butval butt" value="15">data 15 </button></a>
+
+                        </div>
+                    </div>
+                    <div class="text-center p-3 flex-fill">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sorting Items
+                          </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+
 
                 <div class="cards flex-wrap d-flex justify-content-around">
 
                 </div>
             </div>
-
+        </div>
     </main>
 
     <footer class="bg-light container-fluid-2 p-5">

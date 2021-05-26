@@ -10,7 +10,7 @@ function request(){
                 CardsList.innerHTML += `
                 <div class="card  align-items-center text-center d-flex p-5 flex-fill" style="width: 18rem; border: none;">
 
-                    <img src="${element.Image}" class="card-img-top">
+                    <img src="${element.image}" class="card-img-top">
 
                     <div class="starred">
                         <span class="fa fa-star checked"></span>

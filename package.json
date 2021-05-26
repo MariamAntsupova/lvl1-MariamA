@@ -1,0 +1,26 @@
+{
+    "name": "fake_api_bootstrap",
+    "version": "1.0.0",
+    "description": "",
+    "main": "script.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "sass ./assets/main.scss ./style.css --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MariamAntsupova/lvl1-MariamA.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MariamAntsupova/lvl1-MariamA/issues"
+    },
+    "homepage": "https://github.com/MariamAntsupova/lvl1-MariamA#readme",
+    "dependencies": {
+        "bootstrap": "^5.0.1"
+    },
+    "devDependencies": {
+        "sass": "^1.34.0"
+    }
+}
