@@ -143,43 +143,43 @@
                 </a>
                 <hr>
                 <ul class="nav nav-pills flex-column mb-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         BRAND
+                    <li>
+                        <a class="dropdown-toggle text-decoration-none text-dark" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+                            BRAND
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="collapse" id="collapseExample1">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                  Zara
-                                </label>
+                                      Zara
+                                    </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                  Vera-Moda
-                                </label>
+                                      Vera-Moda
+                                    </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                  Roadster
-                                </label>
+                                      Roadster
+                                    </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                  Only
-                                </label>
+                                      Only
+                                    </label>
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         COLORS
+                    <li>
+                        <a class="dropdown-toggle text-decoration-none text-dark" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                            COLORS
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <div class="dots d-flex ">
+                        <div class="collapse " id="collapseExample2">
+                            <div class="dots d-flex " aria-labelledby="navbarDropdownMenuLink">
                                 <span class="dot bg-primary"></span>
                                 <span class="dot bg-secondary"></span>
                                 <span class="dot bg-info"></span>
@@ -190,11 +190,11 @@
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         SIZE
+                    <li>
+                        <a class="dropdown-toggle text-decoration-none text-dark" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+                            SIZE
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="collapse" id="collapseExample3">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
@@ -221,14 +221,15 @@
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         PRICE
+                    <li>
+                        <a class="dropdown-toggle text-decoration-none text-dark" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                            PRICE
                         </a>
-
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <label for="customRange2" class="form-label">Example range</label>
-                            <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                        <div class="collapse " id="collapseExample4">
+                            <div aria-labelledby="navbarDropdownMenuLink">
+                                <label for="customRange2" class="form-label">Example range</label>
+                                <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -251,32 +252,34 @@
                     <div class="border-right text-center p-3">
                         <h4>Showing Products 1-24 Of 10 Result</h4>
                     </div>
-                    <div class="border-right text-center p-3 d-flex flex-fill">
-                        <img src="./images/II" alt="">
-                        <img src="./images/III.png" class="ms-2" alt="">
-                        <img src="./images/IIII.png" class="ms-2" alt="">
-                        <img src="./images/IIIIII.png" class="ms-2" alt="">
+                    <div class="border-right text-center p-3 d-flex flex-fill ">
+                        <div class="row ">
+                            <div class=" col-3 ">
+                                <button onclick="table()" class="butt"><i class="fas fa-th"></i></button>
+                                <button onclick="list()" class="butt"><i class="fas fa-list-ul"></i></button>
+                            </div>
+                            <div class=" col-8 icon-img ">
+                                <button onclick="colsQuantity2()" class="datacols2 butt" value="2"><img src="./images/II.png" alt=""></button>
+                                <button onclick="colsQuantity3()" class="datacols3 butt" value="3"><img src="./images/III.png" alt=""></button>
+                                <button onclick="colsQuantity4()" class="datacols4 butt" value="4"><img src="./images/IIII.png" alt=""></button>
+                                <button onclick="colsQuantity6()" class="datacols6 butt" value="6"><img src="./images/IIIIII.png" alt=""></button>
+                            </div>
+                        </div>
                     </div>
                     <div class="border-right text-center p-3 flex-fill">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Choose Data
-                          </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#"><button onclick="request()" class="butval butt" value="5">data 5 </button></a>
-                            <a class="dropdown-item" href="#"><button onclick="request()" class="butval butt" value="10">data 10 </button></a>
-                            <a class="dropdown-item" href="#"> <button onclick="request()" class="butval butt" value="15">data 15 </button></a>
-
-                        </div>
+                        <select class="form-select border-0 " id="butval">
+                            <option selected> Choose Data</option>
+                            <option value="5"> 5 Products Par Page</option>
+                            <option value="10">10 Products Par Page</option>
+                            <option value="15">15 Products Par Page</option>
+                        </select>
                     </div>
                     <div class="text-center p-3 flex-fill">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Sorting Items
-                          </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
+                        <select class="form-select border-0 ">
+                            <option selected>Sorting items</option>
+                            <option value="1">50 Products</option>
+                            <option value="2">100 Products</option>
+                        </select>
                     </div>
                 </div>
 
@@ -345,7 +348,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
