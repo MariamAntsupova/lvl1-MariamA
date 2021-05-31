@@ -10756,4 +10756,8 @@ textarea.form-control-lg {
   border: none;
 }
 
+.checked {
+  color: yellow;
+}
+
 /*# sourceMappingURL=style.css.map */
