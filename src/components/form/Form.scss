@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+.main {
+    background-image: url("../../assets/istockphoto-636481358-170667a.jpg");
+    background-repeat: repeat;
+    height: 85vh;
+    width: 100vw;
+    align-items: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: auto;
+    padding: 25px 0;
+    form {
+        border: 1px solid #ccc;
+        background-color: white;
+        border-radius: 8px;
+        width: 40vw;
+        height: 60vh;
+        margin: auto;
+        align-items: center;
+        overflow: scroll;
+    }
+    .todos {
+        background-color: #F7F7F7;
+        border-bottom: #ccc;
+        height: 5vh;
+        padding: 5px;
+        text-align: center;
+    }
+    .input {
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+        Button {
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+    }
+    .todo {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+            font-family: 'Dancing Script', cursive;
+            margin: 5%;
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+        }
+        .delete {
+            background-color: red;
+        }
+        .checked {
+            background-color: green;
+        }
+        .edit {
+            background-color: greenyellow;
+        }
+        .todo-item {
+            padding: 0rem 0.5rem;
+        }
+        .completed {
+            text-decoration: line-through;
+            opacity: 0.5;
+        }
+    }
+}
