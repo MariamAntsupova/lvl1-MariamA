@@ -21,14 +21,14 @@ function Form() {
                     <p>Todos</p>
                 </div>
                 <div className="input">
-                    <input name='title' placeholder="Enter Todo Here" value={inputText} onChange={inputTextHendler}/>
+                    <input name='title' placeholder="Enter Todo Here" value={inputText} onChange={inputTextHendler} />
                     <button onClick={submitTodo} className="todo-button" type="submit">
                         Submit
                     </button> 
                 </div>
                 <ul>
                     {todos.map(todo => (
-                        <Todo setTodos={setTodos} todo={todo} todos={todos} key={todo.id} text={todo.text} />
+                        <Todo setTodos={setTodos} todo={todo} todos={todos} key={todo.id} text={todo.text} setIputText={setIputText}/>
                     ))}
                 </ul>
             </form>

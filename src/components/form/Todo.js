@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function Todo({text , todo , todos , setTodos}){
+function Todo({text , todo , todos , setTodos , setIputText}){
     const deleteHandler = () => {
         setTodos(todos.filter(el => el.id !== todo.id));
     }
@@ -22,11 +22,12 @@ function Todo({text , todo , todos , setTodos}){
         e.preventDefault();
         setTodos(todos.map(el => {
             if(el.id === todo.id){
-                el.text = 'edit'
+                setIputText(text);
             }
             return el;
         })
         );
+        deleteHandler();
     }
     return(
         <div className='todo'>
